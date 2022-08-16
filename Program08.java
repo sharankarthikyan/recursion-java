@@ -1,6 +1,6 @@
 // Is Prime
 
-public class Program8 {
+public class Program08 {
     public static boolean recursive(int num, int i) {
         if (num < 2) { // 1st base case
             return false;
