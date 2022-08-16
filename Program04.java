@@ -1,6 +1,6 @@
 // Sum of integers from 1 to n
 
-public class Program4 {
+public class Program04 {
     public static int recursive(int n) {
         if (n == 1) {
             return n;
