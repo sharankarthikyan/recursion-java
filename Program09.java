@@ -1,6 +1,6 @@
 // Decimal to Binary Conversion
 
-public class Program9 {
+public class Program09 {
     public static int recursive(int decimalNum) {
         if (decimalNum == 0) { // base case
             return 0;
