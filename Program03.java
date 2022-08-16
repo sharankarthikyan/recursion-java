@@ -1,6 +1,6 @@
 // Exponent of a Number
 
-public class Program3 {
+public class Program03 {
     public static long recursive(int base, int pow) {
         if (pow == 0) {
             return 1;
