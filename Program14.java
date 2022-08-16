@@ -1,28 +1,29 @@
 // Print all Permutations of a String
 
 public class Program14 {
-    public static void swap(char[] arr, int i, int j) {
+    public static String swap(String str, int i, int j) {
+        char[] arr = str.toCharArray();
         char ch = arr[i];
         arr[i] = arr[j];
         arr[j] = ch;
+        return String.valueOf(arr);
     }
 
-    public static void recursive(char[] arr, int len) {
-        if (len == 1) {
-            System.out.println(arr);
+    public static void recursive(String str, int left, int right) {
+        if (left == right) {
+            System.out.println(str);
             return;
         }
 
-        for (int i = 0; i < len; i++) {
-            swap(arr, i, len - 1);
-            recursive(arr, len - 1);
-            swap(arr, i, len - 1);
+        for (int i = left; i <= right; i++) {
+            String swapped = swap(str, left, i);
+            recursive(swapped, left + 1, right);
         }
 
     }
 
     public static void main(String[] args) {
-        char[] arr = { 'a', 'b', 'c' };
-        recursive(arr, arr.length);
+        String str = "abc";
+        recursive(str, 0, str.length() - 1);
     }
 }
