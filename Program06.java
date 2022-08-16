@@ -1,6 +1,6 @@
 // Fibonacci Sequence
 
-public class Program6 {
+public class Program06 {
     public static int recursive(int n) {
         if (n <= 1) {
             return n;
