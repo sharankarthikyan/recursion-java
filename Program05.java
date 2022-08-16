@@ -1,6 +1,6 @@
 // Modulo operation
 
-public class Program5 {
+public class Program05 {
     public static int recursive(int dividend, int divisor) {
         if (divisor == 0) {
             return -1;
