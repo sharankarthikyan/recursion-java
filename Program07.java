@@ -1,6 +1,6 @@
 // GCD
 
-public class Program7 {
+public class Program07 {
     public static int recursive(int num1, int num2) {
 
         if (num1 == num2) {
