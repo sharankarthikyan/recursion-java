@@ -1,6 +1,6 @@
 // Find the length of the Linked List
 
-public class Program2 {
+public class Program02 {
 
     public static class Node {
         int data;
