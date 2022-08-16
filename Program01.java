@@ -1,6 +1,6 @@
 // Count number of digits in a number
 
-class Program {
+public class Program01 {
 
     public static int recursive(int n) {
         if (n <= 1) {
